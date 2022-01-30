@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "remove-yarn": "rm yarn.lock && rm -r node_modules && pnpm install"
   },
   "dependencies": {
     "next": "12.0.7",
