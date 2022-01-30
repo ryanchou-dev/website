@@ -5,12 +5,9 @@ export default function Home() {
     <div>
       <Head>
         <title>Next.js + TailwindCSS Starter</title>
-        <meta
-          name="description"
-          content="A Next.js + TailwindCSS starter"
-        />
+        <meta name="description" content="A Next.js + TailwindCSS starter" />
       </Head>
-      <main className={"flex items-center justify-center w-screen h-screen"}>
+      <main className={"flex h-screen w-screen items-center justify-center"}>
         <h1 className={"text-4xl font-bold text-indigo-800 hover:italic"}>
           A Next.js + TailwindCSS Starter
         </h1>
