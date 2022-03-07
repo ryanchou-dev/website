@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "remove-yarn": "rm yarn.lock && rm -r node_modules && pnpm install"
+    "add-pnpm": "rm -f yarn.lock package-lock.json && rm -r node_modules && pnpm install"
   },
   "dependencies": {
     "next": "12.1.0",
