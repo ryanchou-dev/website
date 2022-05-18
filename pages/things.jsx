@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import { projdata } from "../components/things/projdata";
 import { FiLink } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
+import { SiDevpost } from 'react-icons/si'
 import Head from "next/head";
+
 export default function things() {
   const container = {
     hidden: { opacity: 1, scale: 0.9 },
@@ -51,7 +53,7 @@ export default function things() {
               />
               <br />
 
-              <p className={`mt-2 inline-block text-xl`}>
+              <p className={`font-semibold mt-2 inline-block text-xl`}>
                 {projdata.name}
                 {projdata.site ? (
                   <a
@@ -71,15 +73,28 @@ export default function things() {
                     target={"_blank"}
                     rel={"noreferrer"}
                     href={projdata.gh}
-                    className={`ml-2 -mb-3 inline-block rounded-lg bg-blue-400 bg-opacity-30 p-1 duration-300 hover:scale-105`}
+                    className={`ml-2 -mb-3 mr-3 inline-block rounded-lg bg-blue-400 bg-opacity-30 p-1 duration-300 hover:scale-105`}
                   >
                     <AiFillGithub color="#6b6b6b" size={29} />
                   </a>
                 ) : (
                   <></>
                 )}
+
+                {projdata.dv ? (
+                  <a
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                    href={projdata.dv}
+                    className={`ml-2 -mb-3 inline-block rounded-lg bg-blue-400 bg-opacity-30 p-1 duration-300 hover:scale-105`}
+                  >
+                    <SiDevpost color="#6b6b6b" size={29} />
+                  </a>
+                ) : (
+                  <></>
+                )}
               </p>
-              <p className={`text-lg font-semibold text-light`}>
+              <p className={`mt-1.5 text-lg text-light`}>
                 {projdata.description}
               </p>
               <div className={`mt-4 mb-2 border-4 border-t border-slate-400`} />

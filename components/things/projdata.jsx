@@ -1,5 +1,14 @@
 export const projdata = [
 	{
+	  name: 'weeklys',
+	  description: 'an efficient competitive programming planner. (winner of HackExeter 2022)',
+	  imageSrc: '/images/weeklys.png',
+	  imageAlt: 'weeklys / cp planner',
+	  site: 'https://onelineaday.vercel.app',
+	  gh: 'https://github.com/ryanchou-dev/weeklys',
+	  dv: 'https://devpost.com/software/weeklys',
+	},
+	{
 	  name: '~one line a day~',
 	  description: 'a minimalistic diary.',
 	  imageSrc: '/images/onelineaday.png',
@@ -13,7 +22,7 @@ export const projdata = [
 	  imageSrc: '/images/cowgen.png',
 	  imageAlt: 'cow pattern generation / ml',
 	  site: '',
-	  gh: 'https://github.com/ryanchou-dev/onelineaday',
+	  gh: 'https://github.com/ryanchou-dev/cow_gen',
 	},
 	{
 	  name: 'stresst',

@@ -14,8 +14,9 @@ export default function home({ post_data }) {
   return (
     <>
       <Head>
-        <meta name="title" content="ryan's website" />
+        <meta name="title" content="ryan chou's website" />
         <meta name="description" content="a collection of ryan's failures." />
+        <meta name="keywords" content="ryan chou usaco cpi competitive-programming" />
         <title>ryan&apos;s website</title>
       </Head>
       <div
@@ -53,7 +54,7 @@ export default function home({ post_data }) {
                 height={200}
               />
               <p
-                className={`mt-0 w-48 text-2xl text-light md:mt-8 md:block md:text-2xl`}
+                className={`mt-0 w-48 text-2xl font-semibold md:mt-8 md:block md:text-2xl`}
               >
                 ryan chou &gt;w&lt;
               </p>
@@ -68,7 +69,7 @@ export default function home({ post_data }) {
           </Link>
         </motion.div>
 
-        <p className={`mt-4 text-xl font-bold text-light md:text-2xl`}>
+        <p className={`mt-4 text-xl text-light md:text-2xl`}>
           im&nbsp;
           <Typewriter
             words={[
@@ -92,7 +93,7 @@ export default function home({ post_data }) {
             href={`https://github.com/ryanchou-dev`}
             target="_blank"
             rel={"noreferrer"}
-            className={`duration-300 hover:scale-105`}
+            className={`duration-300 hover:scale-105 mr-2`}
           >
             <AiFillGithub className={`inline h-7 w-7 opacity-80`} />
           </a>
