@@ -11,7 +11,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function home({ post_data }) {
   return (
-    <>
+    <div className={``}>
       <Head>
         <meta name="title" content="ryan chou's website" />
         <meta name="description" content="a collection of ryan's failures." />
@@ -22,7 +22,7 @@ export default function home({ post_data }) {
         <title>Ryan Chou</title>
       </Head>
       <div
-        className={`min-w-screen min-h-screen bg-lightbg bg-opacity-60 px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}
+        className={`w-screen min-h-screen bg-lightbg bg-opacity-60 px-12 pt-12 pb-4 lg:pt-16 lg:pb-8 lg:px-52 xl:pb-12 xl:px-96`}
       >
         <div>
           <Tippy content="stop touching me!">
@@ -71,7 +71,7 @@ export default function home({ post_data }) {
           </div>
         </div>
         <p
-          className={`text-light mt-2 block text-xl md:mt-4 md:text-2xl lg:inline`}
+          className={`text-light mt-2 block text-sm sm:text-xl md:mt-4 md:text-2xl lg:inline`}
         >
           &nbsp;|&nbsp;im&nbsp;
           <Typewriter
@@ -105,7 +105,7 @@ export default function home({ post_data }) {
           </Link>
           <hr className={`my-2 bg-head h-1 bg-opacity-40 rounded-sm`} />
         </div>
-        <div className={`text-md mt-8 block sm:text-lg`}>
+        <div className={`text-md mt-8 block sm:text-lg pb-12`}>
           <p className="mb-2 text-xl font-semibold text-head">
             a lil about me.
           </p>
@@ -145,12 +145,12 @@ export default function home({ post_data }) {
           </p>
         </div>
 
-        <div className={`absolute bottom-4 w-auto font-mono`}>
+        <footer className={`bottom-0 relative`}>
           &gt; made with boba tea 🧋 and &lt;3 <br />
           <span className={`text-sm`}>© Ryan Chou. All Rights Reserved.</span>
-        </div>
+        </footer>
       </div>
-    </>
+    </div>
   );
 }
 
