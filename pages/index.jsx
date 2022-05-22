@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Date from "../components/Date";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import { getPosts } from "../lib/posts";
@@ -16,68 +15,71 @@ export default function home({ post_data }) {
       <Head>
         <meta name="title" content="ryan chou's website" />
         <meta name="description" content="a collection of ryan's failures." />
-        <meta name="keywords" content="ryan chou usaco cpi competitive-programming" />
-        <title>ryan&apos;s website</title>
+        <meta
+          name="keywords"
+          content="ryan chou usaco cpi competitive-programming"
+        />
+        <title>Ryan Chou</title>
       </Head>
       <div
-        className={`min-w-screen min-h-screen bg-lightbg bg-opacity-60 py-20 px-24 text-center`}
+        className={`min-w-screen min-h-screen bg-lightbg bg-opacity-60 px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}
       >
-        <motion.div
-          initial={{ rotate: 180, scale: 0.5 }}
-          animate={{ rotate: 0, scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-          }}
-          className={`flex shrink items-center justify-center`}
-        >
-          <Link href={`/things`}>
-            <a
-              className={`mr-3 rounded-md bg-cyan-600 bg-opacity-25 p-3 text-xl duration-300 hover:scale-105`}
-            >
-              /things
-            </a>
-          </Link>
-
+        <div>
           <Tippy content="stop touching me!">
             <a
               target={`_blank`}
               rel={"noreferrer"}
+              className={`float-left inline`}
               href={`https://cloud-i3qrqzy85-hack-club-bot.vercel.app/0image.png`}
             >
               <Image
                 src="/images/ryan.png"
                 alt="me."
-                className={`rounded-full md:block`}
-                width={200}
-                height={200}
+                className={`rounded-full`}
+                width="80%"
+                height="80%"
+                layout="fixed"
+                objectFit="contain"
               />
-              <p
-                className={`mt-0 w-48 text-2xl font-semibold md:mt-8 md:block md:text-2xl`}
-              >
-                ryan chou &gt;w&lt;
-              </p>
             </a>
           </Tippy>
-          <Link href={`/posts`}>
+          <p className={`ml-2 inline text-2xl font-semibold text-head underline underline-offset-2 decoration-dotted`}>
+            Ryan Chou
+          </p>
+          <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
             <a
-              className={`ml-3 rounded-md bg-cyan-600 bg-opacity-25 p-3 text-xl duration-300 hover:scale-105`}
+              href={`https://github.com/ryanchou-dev`}
+              target="_blank"
+              rel={"noreferrer"}
+              className={`duration-300 hover:scale-105`}
             >
-              /posts
+              <AiFillGithub
+                className={`inline h-8 w-8 text-[#a9afba] opacity-80 duration-100 hover:text-[#8ca9de] sm:h-12 sm:w-12`}
+              />
             </a>
-          </Link>
-        </motion.div>
 
-        <p className={`mt-4 text-xl text-light md:text-2xl`}>
-          im&nbsp;
+            <a
+              target="_blank"
+              rel={"noreferrer"}
+              href={`https://medium.com/@ryan-chou`}
+              className={`duration-300 hover:scale-105`}
+            >
+              <BsMedium
+                className={`inline h-8 w-8 text-[#a9afba] opacity-80 duration-100 hover:text-[#8ca9de] sm:h-12 sm:w-12`}
+              />
+            </a>
+          </div>
+        </div>
+        <p
+          className={`text-light mt-2 block text-xl md:mt-4 md:text-2xl lg:inline`}
+        >
+          &nbsp;|&nbsp;im&nbsp;
           <Typewriter
             words={[
               "a competitive programmer",
-              "a professional failure",
-              "a web dev",
+              "a web developer",
               "a cow enthusiast",
-              "an ✨ artist ✨",
+              "a boba addict",
             ]}
             loop={0}
             cursor
@@ -85,109 +87,67 @@ export default function home({ post_data }) {
             delaySpeed={4000}
           />
         </p>
-
-        <div
-          className={`mt-7 flex items-center justify-center gap-3 text-2xl md:mt-2`}
-        >
-          <a
-            href={`https://github.com/ryanchou-dev`}
-            target="_blank"
-            rel={"noreferrer"}
-            className={`duration-300 hover:scale-105 mr-2`}
-          >
-            <AiFillGithub className={`inline h-7 w-7 opacity-80`} />
-          </a>
-
-          <Tippy content="no longer updated...">
+        <div className={`mt-8 block text-xl`}>
+          <Link href={`/posts`}>
             <a
-              target="_blank"
-              rel={"noreferrer"}
-              href={`https://medium.com/@ryan-chou`}
-              className={`duration-300 hover:scale-105`}
+              className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
             >
-              <BsMedium className={`inline h-7 w-7 opacity-80`} />
-            </a>
-          </Tippy>
-        </div>
-        <motion.div
-          initial={{ scale: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          animate={{
-            x: 0,
-            y: 0,
-            scale: 1,
-            rotate: 0,
-          }}
-          className={`mt-2 border-t-4 border-cyan-600 opacity-50`}
-        />
-
-        <p className={`w-7/8 mx-auto mt-12 text-center text-2xl text-light`}>
-          ~about me~
-        </p>
-        <div
-          className={`w-7/8 mx-auto mt-4 text-center text-lg text-light lg:text-xl`}
-        >
-          hi, im ryan, a <p className={`inline-block underline`}>useless</p>{" "}
-          programmer who enjoys doing{" "}
-          <p className={`inline-block underline`}>nothing</p>.
-          <br />
-          <br />
-          sometimes, i pull myself (out of my bed) into my chair where i click
-          random keys.
-          <br />
-          <br />
-          if you want to see what these keys create, check out my&nbsp;
-          <Link href={`/things`}>
-            <a className={`text-green-700`}>/things</a>
-          </Link>
-          , or my&nbsp;
-          <Link href={`https://github.com/ryanchou-dev`} passHref={true}>
-            <a
-              target={"_blank"}
-              rel={"noreferrer"}
-              className={`text-green-700 underline decoration-wavy underline-offset-4 hover:decoration-solid`}
-            >
-              github
+              posts
             </a>
           </Link>
-          .
-          <br />
-          <br />
-          hmm. i think that&apos;s it. check out my blog posts if you want to learn
-          more about me!
+          &nbsp;&#8226;&#8226;&#8226;&nbsp;
+          <Link href={`/projects`}>
+            <a
+              className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+            >
+              projects
+            </a>
+          </Link>
+          <hr className={`my-2 bg-head h-1 bg-opacity-40 rounded-sm`} />
         </div>
-        <motion.div
-          initial={{ scale: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          animate={{
-            x: 0,
-            y: 0,
-            scale: 1,
-            rotate: 0,
-          }}
-          className={`mt-12 border-t-4 border-cyan-600 opacity-50`}
-        />
-
-        <div>
-          <p className={`mt-12 block text-center text-2xl text-light`}>
-            ~my posts~
+        <div className={`text-md mt-8 block sm:text-lg`}>
+          <p className="mb-2 text-xl font-semibold text-head">
+            a lil about me.
+          </p>
+          hey! -w-
+          <br />
+          im ryan, but you might know me as `1potato2potato` online. im a
+          student studying computer science in the bay area.
+          <br />
+          <br />
+          <p className="mb-2 text-xl font-semibold text-head">
+            what am i doing right now??
+          </p>
+          Right now, I'm working at CPI, and over the course of this summer,
+          I'll be binge sleeping.
+          <br />
+          <p className={`mt-1.5`}>
+            Consider checking out what im currently working on at{" "}
+            <span
+              className={`bg-opacity rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+            >
+              @ryanchou-dev
+            </span>{" "}
+            or look at some of my projects here.
+          </p>
+          <p className="mt-8 mb-2 text-xl font-semibold text-head">
+            what am i planning to do?
+          </p>
+          <p>
+            I'm hoping to study more machine learning, web development, and
+            competitive programming. I'll routinely update on what I'm learning
+            here.
+          </p>
+          <br />
+          <p className={`pl-2`}>
+            thanks for stopping by. <br />
+            <span className={`pl-6`}>- ryan</span>
           </p>
         </div>
-        <div className={`mt-12 flex flex-col items-center justify-center`}>
-          {post_data.map(({ slug, abstract, date, title }) => (
-            <Link href={"/posts/" + slug} key={slug}>
-              <div
-                className={`mb-6 block w-full rounded-lg bg-gray-900 bg-opacity-10 p-4 text-lg duration-300 hover:scale-105 md:w-1/2 lg:w-1/3 lg:text-xl`}
-              >
-                <p className={`text-2xl`}>{title}</p>
-                <div className={`text-gray-600`}>
-                  <Date dateString={date} />
-                </div>
-                <br />
-                {abstract}
-              </div>
-            </Link>
-          ))}
+
+        <div className={`absolute bottom-4 w-auto font-mono`}>
+          &gt; made with boba tea 🧋 and &lt;3 <br />
+          <span className={`text-sm`}>© Ryan Chou. All Rights Reserved.</span>
         </div>
       </div>
     </>
