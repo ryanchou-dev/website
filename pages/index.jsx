@@ -118,8 +118,8 @@ export default function home({ post_data }) {
           <p className="mb-2 text-xl font-semibold text-head">
             what am i doing right now??
           </p>
-          Right now, I'm working at CPI, and over the course of this summer,
-          I'll be binge sleeping.
+          Right now, I&apos;m working at CPI, and over the course of this summer,
+          I&apos;ll be binge sleeping.
           <br />
           <p className={`mt-1.5`}>
             Consider checking out what im currently working on at{" "}
@@ -134,8 +134,8 @@ export default function home({ post_data }) {
             what am i planning to do?
           </p>
           <p>
-            I'm hoping to study more machine learning, web development, and
-            competitive programming. I'll routinely update on what I'm learning
+            I&apos;m hoping to study more machine learning, web development, and
+            competitive programming. I&apos;ll routinely update on what I&apos;m learning
             here.
           </p>
           <br />
