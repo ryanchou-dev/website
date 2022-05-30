@@ -123,11 +123,11 @@ export default function home({ post_data }) {
           <br />
           <p className={`mt-1.5`}>
             Consider checking out what im currently working on at{" "}
-            <span
-              className={`bg-opacity rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+            <a
+              target={'_blank'} href={'https://github.com/ryanchou-dev'}  className={`inline bg-opacity rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
             >
               @ryanchou-dev
-            </span>{" "}
+            </a>{" "}
             or look at some of my projects here.
           </p>
           <p className="mt-8 mb-2 text-xl font-semibold text-head">
