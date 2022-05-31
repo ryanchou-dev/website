@@ -13,7 +13,7 @@ export const projdata = [
 	  description: 'a minimalistic diary.',
 	  imageSrc: '/images/onelineaday.png',
 	  imageAlt: 'one line a day / diary',
-	  site: 'https://onelineaday.vercel.app',
+	  site: 'https://weeklys.vercel.app',
 	  gh: 'https://github.com/ryanchou-dev/onelineaday',
 	},
 	{
