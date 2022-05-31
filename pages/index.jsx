@@ -124,7 +124,7 @@ export default function home({ post_data }) {
           <p className={`mt-1.5`}>
             Consider checking out what im currently working on at{" "}
             <a
-              target={'_blank'} href={'https://github.com/ryanchou-dev'}  className={`inline bg-opacity rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+              target={'_blank'} rel={"noreferrer"} href={'https://github.com/ryanchou-dev'}  className={`inline bg-opacity rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
             >
               @ryanchou-dev
             </a>{" "}
