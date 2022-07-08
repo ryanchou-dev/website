@@ -118,13 +118,13 @@ export default function home({ post_data }) {
           <p className="mb-2 text-xl font-semibold text-head">
             what am i doing right now??
           </p>
-          Right now, I&apos;m working at CPI, and over the course of this summer,
-          I&apos;ll be binge sleeping.
+          right now, i&apos;m working at CPI, and over the course of this summer,
+          i&apos;ll be binge sleeping.
           <br />
           <p className={`mt-1.5`}>
-            Consider checking out what im currently working on at{" "}
+            consider checking out what im currently working on at{" "}
             <a
-              target={'_blank'} href={'https://github.com/ryanchou-dev'}  className={`inline bg-opacity rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+              target={'_blank'} rel="noreferrer" href={'https://github.com/ryanchou-dev'}  className={`inline bg-opacity rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
             >
               @ryanchou-dev
             </a>{" "}
@@ -134,8 +134,8 @@ export default function home({ post_data }) {
             what am i planning to do?
           </p>
           <p>
-            I&apos;m hoping to study more machine learning, web development, and
-            competitive programming. I&apos;ll routinely update on what I&apos;m learning
+            i&apos;m hoping to study more machine learning, web development, and
+            competitive programming. i&apos;ll routinely update on what I&apos;m learning
             here.
           </p>
           <br />
