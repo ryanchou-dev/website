@@ -6,6 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
+import Giscus from '@giscus/react';
+
 export default function post({ data }) {
   return (
     <>
@@ -61,7 +63,7 @@ export default function post({ data }) {
                 />
               </a>
             </div>
-            <p className={`mt-1.5 pl-8 text-black font-normal text-lg pr-24`}>
+            <p className={`mt-1.5 pl-12 text-black font-normal md:text-lg text-sm pr-24`}>
               {data.abstract}
             </p>
           </div>
@@ -71,11 +73,34 @@ export default function post({ data }) {
           <hr className={`my-2 bg-head h-1 bg-opacity-40 rounded-sm`} />
         </div>
 
-        <div
-          className={` prose max-w-none text-xl prose-img:rounded-lg prose-hr:h-1 prose-hr:rounded-sm prose-hr:bg-head prose-hr:opacity-40 prose-hr:my-2`}
-          dangerouslySetInnerHTML={{ __html: data.contentHTML }}
+        <div className={`min-h-`}>
+          <div
+            className={` prose max-w-none text-lg prose-img:rounded-lg prose-hr:h-1 prose-hr:rounded-sm prose-hr:bg-head prose-hr:opacity-40 prose-hr:my-2`}
+            dangerouslySetInnerHTML={{ __html: data.contentHTML }}
+          />
+        </div>
+
+      </div>
+      <div className={`bg-lightbg bg-opacity-60 px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}>
+        <p className={`text-2xl text-head font-semibold text-center underline decoration-dotted underline-offset-2`}>
+          Comments
+        </p>
+        <Giscus
+          id="comments"
+          repo="ryanchou-dev/website"
+          repoId="R_kgDOHNdkvQ"
+          category="comments"
+          categoryId="DIC_kwDOHNdkvc4CQJun"
+          mapping="title"
+          reactionsEnabled="1"
+          emitMetadata="0"
+          inputPosition="top"
+          theme="light"
+          lang="en"
+          loading="lazy"
         />
       </div>
+        
     </>
   );
 }

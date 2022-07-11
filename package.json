@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fontsource/m-plus-rounded-1c": "^4.5.8",
+    "@giscus/react": "^2.0.6",
     "@tailwindcss/typography": "^0.5.2",
     "@tippyjs/react": "^4.2.6",
     "date-fns": "^2.28.0",
