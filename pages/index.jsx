@@ -111,7 +111,7 @@ export default function home({ post_data }) {
           </p>
           hey! -w-
           <br />
-          im ryan, but you might know me as `1potato2potato` online. im a
+          im ryan, but you might know me as `cryan` or `1potato2potato` online. im a
           student studying computer science in the bay area.
           <br />
           <br />
