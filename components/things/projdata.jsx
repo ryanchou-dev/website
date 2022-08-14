@@ -17,6 +17,14 @@ export const projdata = [
 	  gh: 'https://github.com/ryanchou-dev/onelineaday',
 	},
 	{
+	  name: 'So... Why does Dijkstra\'s Algorithm work?',
+	  description: 'my submission for SoME2',
+	  imageSrc: '/images/some2.png',
+	  imageAlt: 'info video / some2',
+	  site: 'https://www.youtube.com/watch?v=yU6p7bpEKAE',
+	  gh: '',
+	},
+	{
 	  name: 'cow pattern generation',
 	  description: 'what it says ^^',
 	  imageSrc: '/images/cowgen.png',
