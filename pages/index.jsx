@@ -135,12 +135,12 @@ export default function home({ post_data }) {
             >
               @ryanchou-dev
             </a>{" "}
-            or look at some of my projects{" "}
+            or look at some of my{" "}
             <Link href={`/projects`}>
               <a
                 className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline`}
               >
-                here
+                projects
               </a>
             </Link>
             .
@@ -156,10 +156,10 @@ export default function home({ post_data }) {
               <a
                 className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline`}
               >
-                here
+                on my blog
               </a>
             </Link>
-            .
+            !
           </p>
           <br />
           <p className={`pl-2`}>
