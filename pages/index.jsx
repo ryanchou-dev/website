@@ -121,9 +121,9 @@ export default function home({ post_data }) {
           <p className="mb-2 text-xl font-semibold text-head">
             what am i doing right now??
           </p>
-          as the holiday season approaches, i'll be working on some more
-          exciting projects! meanwhile, i'm still working at CPI, and lurking
-          around Hack Club.
+          as the holiday season approaches, i&apos;ll be working on some more
+          exciting projects! meanwhile, i&apos;m still working at CPI, and
+          lurking around Hack Club.
           <br />
           <p className={`mt-1.5`}>
             consider checking out what im currently working on at{" "}
