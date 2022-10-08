@@ -22,7 +22,7 @@ export default function home({ post_data }) {
         <title>Ryan Chou</title>
       </Head>
       <div
-        className={`w-screen min-h-screen bg-lightbg bg-opacity-60 px-12 pt-12 pb-4 lg:pt-16 lg:pb-8 lg:px-52 xl:pb-12 xl:px-96`}
+        className={`min-h-screen w-screen bg-lightbg bg-opacity-60 px-12 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12`}
       >
         <div>
           <Tippy content="stop touching me!">
@@ -43,7 +43,9 @@ export default function home({ post_data }) {
               />
             </a>
           </Tippy>
-          <p className={`ml-2 inline text-2xl font-semibold text-head underline underline-offset-2 decoration-dotted`}>
+          <p
+            className={`ml-2 inline text-2xl font-semibold text-head underline decoration-dotted underline-offset-2`}
+          >
             Ryan Chou
           </p>
           <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
@@ -103,49 +105,70 @@ export default function home({ post_data }) {
               projects
             </a>
           </Link>
-          <hr className={`my-2 bg-head h-1 bg-opacity-40 rounded-sm`} />
+          <hr className={`my-2 h-1 rounded-sm bg-head bg-opacity-40`} />
         </div>
-        <div className={`text-md mt-8 block sm:text-lg pb-12`}>
+        <div className={`text-md mt-8 block pb-12 sm:text-lg`}>
           <p className="mb-2 text-xl font-semibold text-head">
             a lil about me.
           </p>
-          hey! -w-
+          yo!
           <br />
-          im ryan, but you might know me as `cryan` or `1potato2potato` online. im a
-          student studying computer science in the bay area.
+          im ryan, but you probably know me as [cryan] online. im a student
+          studying computer science in the bay area. i love problem solving and
+          making things!
           <br />
           <br />
           <p className="mb-2 text-xl font-semibold text-head">
             what am i doing right now??
           </p>
-          right now, i&apos;m working at CPI, and over the course of this summer,
-          i&apos;ll be binge sleeping.
+          as the holiday season approaches, i'll be working on some more
+          exciting projects! meanwhile, i'm still working at CPI, and lurking
+          around Hack Club.
           <br />
           <p className={`mt-1.5`}>
             consider checking out what im currently working on at{" "}
             <a
-              target={'_blank'} rel="noreferrer" href={'https://github.com/ryanchou-dev'}  className={`inline bg-opacity rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+              target={"_blank"}
+              rel="noreferrer"
+              href={"https://github.com/ryanchou-dev"}
+              className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
             >
               @ryanchou-dev
             </a>{" "}
-            or look at some of my projects here.
+            or look at some of my projects{" "}
+            <Link href={`/projects`}>
+              <a
+                className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline`}
+              >
+                here
+              </a>
+            </Link>
+            .
           </p>
           <p className="mt-8 mb-2 text-xl font-semibold text-head">
             what am i planning to do?
           </p>
           <p>
             i&apos;m hoping to study more machine learning, web development, and
-            competitive programming. i&apos;ll routinely update on what I&apos;m learning
-            here.
+            competitive programming. i&apos;ll routinely update on what I&apos;m
+            learning{" "}
+            <Link href={`/posts`}>
+              <a
+                className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline`}
+              >
+                here
+              </a>
+            </Link>
+            .
           </p>
           <br />
           <p className={`pl-2`}>
             thanks for stopping by. <br />
-            <span className={`pl-6`}>- ryan</span>
+            <span className={`pl-6`}>~ ryan</span>
           </p>
         </div>
 
-        <footer className={`bottom-0 relative`}>
+        <footer className={`relative bottom-0`}>
           &gt; made with boba tea 🧋 and &lt;3 <br />
           <span className={`text-sm`}>© Ryan Chou. All Rights Reserved.</span>
         </footer>

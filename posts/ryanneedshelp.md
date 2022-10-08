@@ -1,7 +1,7 @@
 ---
-title: 'ryan rambles pt. 1'
-date: '2022-07-11'
-abstract: 'yes i finally got to doing my blog'
+title: "ryan rambles pt. 1"
+date: "2022-07-11"
+abstract: "yes i finally got to doing my blog"
 ---
 
 **WELCOME TO MY NEW SERIES: RYAN RAMBLES**
@@ -14,7 +14,7 @@ i am runnning out of things to write about because of my mostly mundane life. pa
 
 > 2:16pm: ono my teacher graded something
 
-> 2:16pm: *PANIK CHECK CANVAS PANIK*
+> 2:16pm: _PANIK CHECK CANVAS PANIK_
 
 > 2:17pm: omg yay i haven't flunked yet
 
@@ -28,8 +28,7 @@ i am runnning out of things to write about because of my mostly mundane life. pa
 
 > 3am: sleep
 
-
----	
+---
 
 anyways so ive been listening to a lot of music while im studying and now i think spotify is very confused about my music taste.
 
@@ -38,8 +37,8 @@ you see, spotify has a niftly little feature called autoplay, and it's (supposed
 
 [*how in the world do you go from lofi to pop 😭*]
 
-while i may never know why spotify recommends these songs, i can confirm that it can throw me down two hours of listening to christmas music and dying inside. WHY IS ALL I WANT FOR CHRISTMAS IS YOU STUCK IN MY HEAD ITS NOT EVEN THAT GOOD OF A SONG
+while i may never know why spotify recommends these songs, i can confirm that it can throw me down two hours of listening to christmas music and dying inside.
 
-i swear i must not have a life to how badly i want christmas to happen 😭😭😭
+"all i want for christmas" is not that good... RIGHT.
 
-aaand, that is all. tyty for reading, ~ciao 🦆~
+aand, that is all. tyty for reading, ~ciao 🦆~
