@@ -75,7 +75,7 @@ export default function post({ data }) {
 
         <div className={`min-h-`}>
           <div
-            className={`prose max-w-none font-['Calibri'] text-xl prose-img:rounded-lg prose-hr:my-2 prose-hr:h-1 prose-hr:rounded-sm prose-hr:bg-head prose-hr:opacity-40`}
+            className={`prose max-w-none text-xl prose-img:rounded-lg prose-hr:my-2 prose-hr:h-1 prose-hr:rounded-sm prose-hr:bg-head prose-hr:opacity-40`}
             dangerouslySetInnerHTML={{ __html: data.contentHTML }}
           />
         </div>
