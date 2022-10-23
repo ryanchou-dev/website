@@ -34,7 +34,7 @@ export default function home({ post_data }) {
             >
               <Image
                 src="/images/ryan.png"
-                alt="me."
+                alt="ryan chou."
                 className={`rounded-full`}
                 width="80%"
                 height="80%"
@@ -43,11 +43,11 @@ export default function home({ post_data }) {
               />
             </a>
           </Tippy>
-          <p
+          <h1
             className={`ml-2 inline text-2xl font-semibold text-head underline decoration-dotted underline-offset-2`}
           >
             Ryan Chou
-          </p>
+          </h1>
           <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
             <a
               href={`https://github.com/ryanchou-dev`}
