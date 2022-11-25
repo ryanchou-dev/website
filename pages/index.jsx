@@ -8,8 +8,13 @@ import { getPosts } from "../lib/posts";
 import { AiFillGithub } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
 import { Typewriter } from "react-simple-typewriter";
+import Snowfall from "react-snowfall";
+import React from "react";
 
 export default function home({ post_data }) {
+  if (typeof window === "undefined") {
+    React.useLayoutEffect = React.useEffect;
+  }
   return (
     <div className={``}>
       <Head>
@@ -24,6 +29,7 @@ export default function home({ post_data }) {
       <div
         className={`min-h-screen w-screen bg-lightbg bg-opacity-60 px-12 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12`}
       >
+        <Snowfall color="white" />
         <div>
           <Tippy content="stop touching me!">
             <a

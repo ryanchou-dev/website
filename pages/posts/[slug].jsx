@@ -7,6 +7,7 @@ import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
 import Giscus from "@giscus/react";
+import Snowfall from "react-snowfall";
 
 export default function post({ data }) {
   return (
@@ -20,6 +21,7 @@ export default function post({ data }) {
       <div
         className={`min-w-screen min-h-screen bg-lightbg bg-opacity-60 px-12 py-12 lg:py-16 lg:px-52 xl:px-80`}
       >
+        <Snowfall color="white" />
         <div>
           <Link href={"/"}>
             <a className={`float-left inline`}>

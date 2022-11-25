@@ -6,7 +6,7 @@ import Tippy from "@tippyjs/react";
 import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
-
+import Snowfall from "react-snowfall";
 export default function posts({ post_data }) {
   return (
     <>
@@ -18,6 +18,7 @@ export default function posts({ post_data }) {
       <div
         className={`min-w-screen min-h-screen bg-lightbg bg-opacity-60 px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}
       >
+        <Snowfall color="white" />
         <div>
           <Link href={"/"}>
             <a className={`float-left inline`}>
