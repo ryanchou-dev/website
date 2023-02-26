@@ -16,9 +16,8 @@ export default function posts({ post_data }) {
         <title>Ryan Chou</title>
       </Head>
       <div
-        className={`min-w-screen min-h-screen bg-lightbg bg-opacity-60 px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}
+        className={`min-w-screen min-h-screen bg-lightbg px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}
       >
-        <Snowfall color="white" />
         <div>
           <Link href={"/"}>
             <a className={`float-left inline`}>

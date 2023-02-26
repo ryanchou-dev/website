@@ -6,12 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "head": "#174a81",
-        "lightbg": "#D8DEE9",
+        head: "#4f5d75",
+        underw: "#6b9080",
+        lightbg: "#FFFFFF",
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ]
+  plugins: [require("@tailwindcss/typography")],
 };

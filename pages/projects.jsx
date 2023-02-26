@@ -16,9 +16,8 @@ export default function projects() {
         <title>Ryan Chou</title>
       </Head>
       <div
-        className={`min-w-screen relative min-h-screen bg-lightbg bg-opacity-60 px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}
+        className={`min-w-screen relative min-h-screen bg-lightbg px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}
       >
-        <Snowfall snowflakeCount={300} className="min-h-screen" color="white" />
         <div className={`mb-12`}>
           <Link href={"/"}>
             <a className={`float-left inline`}>

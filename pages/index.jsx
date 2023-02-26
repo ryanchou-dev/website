@@ -8,7 +8,6 @@ import { getPosts } from "../lib/posts";
 import { AiFillGithub } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
 import { Typewriter } from "react-simple-typewriter";
-import Snowfall from "react-snowfall";
 import React from "react";
 
 export default function home({ post_data }) {
@@ -27,9 +26,8 @@ export default function home({ post_data }) {
         <title>Ryan Chou</title>
       </Head>
       <div
-        className={`min-h-screen w-screen bg-lightbg bg-opacity-60 px-12 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12`}
+        className={`min-h-screen w-screen  bg-[url('/images/bgnow.png')] px-12 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12`}
       >
-        <Snowfall color="white" />
         <div>
           <Tippy content="stop touching me!">
             <a
@@ -50,7 +48,7 @@ export default function home({ post_data }) {
             </a>
           </Tippy>
           <h1
-            className={`ml-2 inline text-2xl font-semibold text-head underline decoration-dotted underline-offset-2`}
+            className={`ml-2 inline text-2xl font-semibold text-head underline decoration-underw decoration-dotted underline-offset-2`}
           >
             Ryan Chou
           </h1>
@@ -174,7 +172,7 @@ export default function home({ post_data }) {
           </p>
         </div>
 
-        <footer className={`relative bottom-0`}>
+        <footer>
           &gt; made with boba tea 🧋 and &lt;3 <br />
           <span className={`text-sm`}>© Ryan Chou. All Rights Reserved.</span>
         </footer>

@@ -19,9 +19,8 @@ export default function post({ data }) {
         <title>{data.title}</title>
       </Head>
       <div
-        className={`min-w-screen min-h-screen bg-lightbg bg-opacity-60 px-12 py-12 lg:py-16 lg:px-52 xl:px-80`}
+        className={`min-w-screen min-h-screen bg-lightbg  px-12 py-12 lg:py-16 lg:px-52 xl:px-80`}
       >
-        <Snowfall color="white" />
         <div>
           <Link href={"/"}>
             <a className={`float-left inline`}>
