@@ -118,37 +118,43 @@ export default function home({ post_data }) {
           yo!
           <br />
           im ryan, but you probably know me as [cryan] online. im a student
-          studying computer science in the bay area. i love problem solving and
-          making things!
+          studying computer science in the bay area. i love algorithmic problem
+          solving, building things, and teaching others!
           <br />
           <br />
           <p className="mb-2 text-xl font-semibold text-head">
             what am i doing right now??
           </p>
-          as the holiday season approaches, i&apos;ll be working on some more
-          exciting projects! meanwhile, i&apos;m still working at CPI, and
-          lurking around Hack Club.
-          <br />
-          <p className={`mt-1.5`}>
-            consider checking out what im currently working on at{" "}
+          as summer rolls around, i&apos;ll be working on some more exciting
+          projects! meanwhile, i&apos;m continuing to create content and teach
+          at{" "}
+          <a
+            target={"_blank"}
+            rel="noreferrer"
+            href={"https://joincpi.org"}
+            className={`bg-opacity inline rounded-lg p-0.5 text-purple-800 underline duration-150 hover:cursor-pointer hover:bg-purple-500 hover:bg-opacity-20 hover:text-black hover:no-underline md:p-1`}
+          >
+            CPI
+          </a>
+          ! What I work on from day-to-day changes sporadically, so you can
+          check up on my latest projects at{" "}
+          <a
+            target={"_blank"}
+            rel="noreferrer"
+            href={"https://github.com/ryanchou-dev"}
+            className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+          >
+            @ryanchou-dev
+          </a>{" "}
+          or look at some of my{" "}
+          <Link href={`/projects`}>
             <a
-              target={"_blank"}
-              rel="noreferrer"
-              href={"https://github.com/ryanchou-dev"}
-              className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+              className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline`}
             >
-              @ryanchou-dev
-            </a>{" "}
-            or look at some of my{" "}
-            <Link href={`/projects`}>
-              <a
-                className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline`}
-              >
-                projects
-              </a>
-            </Link>
-            .
-          </p>
+              projects
+            </a>
+          </Link>
+          .
           <p className="mt-8 mb-2 text-xl font-semibold text-head">
             what am i planning to do?
           </p>
