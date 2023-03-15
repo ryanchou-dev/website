@@ -21,12 +21,12 @@ export default function home({ post_data }) {
         <meta name="description" content="a collection of ryan's failures." />
         <meta
           name="keywords"
-          content="ryan chou usaco cpi competitive-programming"
+          content="ryan chou usaco cs computer science competitive-programming"
         />
         <title>Ryan Chou</title>
       </Head>
       <div
-        className={`min-h-screen w-screen  bg-[url('/images/bgnow.png')] px-12 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12`}
+        className={`max-w-screen min-h-screen bg-[url('/images/bgnow.png')] px-12 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12`}
       >
         <div>
           <Tippy content="stop touching me!">
