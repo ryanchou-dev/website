@@ -26,7 +26,7 @@ export default function home({ post_data }) {
         <title>Ryan Chou</title>
       </Head>
       <div
-        className={`max-w-screen min-h-screen bg-[url('/images/bgnow.png')] px-12 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12`}
+        className={`max-w-screen min-h-screen bg-slate-300 bg-opacity-20 px-6 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12`}
       >
         <div>
           <Tippy content="stop touching me!">
