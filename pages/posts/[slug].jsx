@@ -35,7 +35,9 @@ export default function post({ data }) {
               />
             </a>
           </Link>
-          <div className={`inline text-4xl font-semibold text-head`}>
+          <div
+            className={`inline text-sm font-semibold text-head sm:text-xl md:text-2xl`}
+          >
             <p className={`underline decoration-dotted underline-offset-2`}>
               {data.title}
             </p>

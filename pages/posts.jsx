@@ -32,7 +32,7 @@ export default function posts({ post_data }) {
               />
             </a>
           </Link>
-          <div className={`inline text-4xl font-semibold text-head`}>
+          <div className={`inline font-semibold text-head sm:text-4xl`}>
             <p className={`underline decoration-dotted underline-offset-2`}>
               Posts
             </p>
@@ -59,7 +59,9 @@ export default function posts({ post_data }) {
                 />
               </a>
             </div>
-            <p className={`mt-1.5 pl-8 pr-24 text-2xl font-normal text-black`}>
+            <p
+              className={`mt-1.5 pl-8 pr-24 text-sm font-normal text-black sm:text-xl md:text-2xl`}
+            >
               things that im currently learning/excited for!
             </p>
           </div>
