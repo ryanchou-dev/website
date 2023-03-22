@@ -23,10 +23,10 @@ export default function home({ post_data }) {
           name="keywords"
           content="ryan chou usaco cs computer science competitive-programming"
         />
-        <title>Ryan Chou</title>
+        <title>Ryan&apos;s Personal Website</title>
       </Head>
       <div
-        className={`max-w-screen min-h-screen bg-slate-300 bg-opacity-20 px-6 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12`}
+        className={`max-w-screen min-h-screen bg-[#c5c7cc] bg-opacity-40 px-6 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12 2xl:px-[500px]`}
       >
         <div>
           <Tippy content="stop touching me!">
@@ -34,12 +34,12 @@ export default function home({ post_data }) {
               target={`_blank`}
               rel={"noreferrer"}
               className={`float-left inline`}
-              href={`https://cloud-i3qrqzy85-hack-club-bot.vercel.app/0image.png`}
+              href={`https://cloud-idpd4xpze-hack-club-bot.vercel.app/0image.png`}
             >
               <Image
                 src="/images/ryan.png"
                 alt="ryan chou."
-                className={`rounded-full`}
+                className={`rounded-full saturate-[100%]`}
                 width="80%"
                 height="80%"
                 layout="fixed"
@@ -48,7 +48,7 @@ export default function home({ post_data }) {
             </a>
           </Tippy>
           <h1
-            className={`ml-2 inline text-2xl font-semibold text-head underline decoration-underw decoration-dotted underline-offset-2`}
+            className={`ml-2 inline text-4xl font-semibold text-head underline decoration-slate-300 decoration-dashed underline-offset-2`}
           >
             Ryan Chou
           </h1>
@@ -77,7 +77,7 @@ export default function home({ post_data }) {
           </div>
         </div>
         <p
-          className={`text-light mt-2 block text-sm sm:text-xl md:mt-4 md:text-2xl lg:inline`}
+          className={`text-light mt-2 block text-sm sm:text-xl md:text-2xl lg:inline xl:mt-4`}
         >
           &nbsp;|&nbsp;im&nbsp;
           <Typewriter
@@ -89,8 +89,9 @@ export default function home({ post_data }) {
             ]}
             loop={0}
             cursor
-            cursorStyle="_"
-            delaySpeed={4000}
+            cursorStyle="|"
+            typeSpeed={300}
+            delaySpeed={6000}
           />
         </p>
         <div className={`mt-8 block text-xl`}>
@@ -111,8 +112,8 @@ export default function home({ post_data }) {
           </Link>
           <hr className={`my-2 h-1 rounded-sm bg-head bg-opacity-40`} />
         </div>
-        <div className={`text-md mt-8 block pb-12 sm:text-lg`}>
-          <p className="mb-2 text-xl font-semibold text-head">
+        <div className={`mt-8 block pb-12 text-lg sm:text-xl`}>
+          <p className="mb-2 text-2xl font-semibold text-head">
             a lil about me.
           </p>
           yo!

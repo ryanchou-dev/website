@@ -16,7 +16,7 @@ export default function projects() {
         <title>Ryan Chou</title>
       </Head>
       <div
-        className={`min-w-screen relative min-h-screen bg-lightbg px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}
+        className={`max-w-screen min-h-screen bg-[#c5c7cc] bg-opacity-40 px-6 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12 2xl:px-[500px]`}
       >
         <div className={`mb-12`}>
           <Link href={"/"}>
@@ -24,7 +24,7 @@ export default function projects() {
               <Image
                 src="/images/ryan.png"
                 alt="me."
-                className={`rounded-full`}
+                className={`rounded-full saturate-[100%]`}
                 width="80%"
                 height="80%"
                 layout="fixed"
@@ -32,8 +32,8 @@ export default function projects() {
               />
             </a>
           </Link>
-          <div className={`inline text-2xl font-semibold text-head`}>
-            <p className={`underline decoration-dotted underline-offset-2`}>
+          <div className={`-mb-6 inline text-4xl font-semibold text-head`}>
+            <p className={` underline decoration-dotted underline-offset-2`}>
               Projects
             </p>
             <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
@@ -59,13 +59,10 @@ export default function projects() {
                 />
               </a>
             </div>
-            <p className={`mt-1.5 pl-8  pr-28 text-lg font-normal text-black`}>
-              some things ive worked on
-            </p>
           </div>
         </div>
         {projdata.map((projdata) => (
-          <div key={projdata.name} className={`relative`}>
+          <div key={projdata.name} className={`relative `}>
             <Image
               src={projdata.imageSrc}
               alt={projdata.imageAlt}
@@ -73,7 +70,7 @@ export default function projects() {
               height={400}
               objectFit="contain"
               objectPosition="top left"
-              className={` border-8`}
+              className={``}
             />
             <br />
 

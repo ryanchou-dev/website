@@ -19,7 +19,7 @@ export default function post({ data }) {
         <title>{data.title}</title>
       </Head>
       <div
-        className={`min-w-screen min-h-screen bg-lightbg  px-12 py-12 lg:py-16 lg:px-52 xl:px-80`}
+        className={`max-w-screen min-h-screen bg-[#c5c7cc] bg-opacity-40 px-6 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12 2xl:px-[500px]`}
       >
         <div>
           <Link href={"/"}>
@@ -35,7 +35,7 @@ export default function post({ data }) {
               />
             </a>
           </Link>
-          <div className={`inline text-2xl font-semibold text-head`}>
+          <div className={`inline text-4xl font-semibold text-head`}>
             <p className={`underline decoration-dotted underline-offset-2`}>
               {data.title}
             </p>

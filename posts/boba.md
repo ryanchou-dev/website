@@ -4,7 +4,7 @@ date: "2022-10-07"
 abstract: "by a person who has drank hundreds of boba drinks"
 ---
 
-## "A burning debacle I call life"
+## how im doing~
 
 YO! Welcome back to my blog >W<
 
@@ -14,7 +14,7 @@ nothing that a fresh cup of boba can't fix. 🧋)
 
 Truthfully, the majority of my teachers are ⭐, and I'm excited to work with them. (except my science teacher 🤭)
 
-As we turn into the holidays, and competition season 😩, I can't be helped to be filled with joy >:D  
+As we turn into the holidays, and competition season 😩, I can't be helped to be filled with joy >:D
 This summer honestly disappointing, and I slept **WAY** too much, so now I'm in this ✨ultra grind✨ to try to prepare for USACO, math, and balance school work in process.
 
 Ehh, that's all you'll hear from my life, but something more exciting is a
@@ -33,7 +33,7 @@ stay until the end for the best boba ever 👍
 
 > Rating: 6/10
 
-Pretty good bang for your buck. If you go on Tuesdays, you get a free uprgade to a larger cup, which is `32oz`.  
+Pretty good bang for your buck. If you go on Tuesdays, you get a free uprgade to a larger cup, which is `32oz`.
 However, the drink is really sugary and all the flavors taste the same.
 
 I got a Mango Lychee MT.
@@ -82,7 +82,7 @@ I got the Mango GT with boba and mango jelly.
 
 > Rating: 8/10
 
-Drink is much higher quality, and the boba is so soft~  
+Drink is much higher quality, and the boba is so soft~
 My only complaint is that it's kinda pricy, but it's the only boba shop that's open in the morning, it's great for school.
 
 I got the Tiger Boba Latte.
@@ -99,7 +99,7 @@ I got the Tiger Boba Latte.
 
 OMFG THIS PLACE IS INCREDIBLE...
 
-The environment is on point, and the shop is just so pretty. They also serve ramen and other yummy food.  
+The environment is on point, and the shop is just so pretty. They also serve ramen and other yummy food.
 Great place to meet with friends 🤩
 
 A little pricy, but you should at least try it once. It's the best boba I ever had~
@@ -108,7 +108,7 @@ I got the Mango Pomelo Sago (recommend 10/10)
 
 ---
 
-That concludes my ultimate boba review.  
+That concludes my ultimate boba review.
 Let me know your favorite boba places in the comments below, and I'll catch ya next time <3
 
 (+ didn't have a pic but teaspoon was also very slay)

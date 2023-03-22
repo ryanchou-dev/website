@@ -16,7 +16,7 @@ export default function posts({ post_data }) {
         <title>Ryan Chou</title>
       </Head>
       <div
-        className={`min-w-screen min-h-screen bg-lightbg px-12 py-12 lg:py-16 lg:px-52 xl:px-96`}
+        className={`max-w-screen min-h-screen bg-[#c5c7cc] bg-opacity-40 px-6 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12 2xl:px-[500px]`}
       >
         <div>
           <Link href={"/"}>
@@ -24,7 +24,7 @@ export default function posts({ post_data }) {
               <Image
                 src="/images/ryan.png"
                 alt="me."
-                className={`rounded-full`}
+                className={`rounded-full saturate-[100%]`}
                 width="80%"
                 height="80%"
                 layout="fixed"
@@ -32,7 +32,7 @@ export default function posts({ post_data }) {
               />
             </a>
           </Link>
-          <div className={`inline text-2xl font-semibold text-head`}>
+          <div className={`inline text-4xl font-semibold text-head`}>
             <p className={`underline decoration-dotted underline-offset-2`}>
               Posts
             </p>
@@ -59,7 +59,7 @@ export default function posts({ post_data }) {
                 />
               </a>
             </div>
-            <p className={`mt-1.5 pl-8 pr-24 text-lg font-normal text-black`}>
+            <p className={`mt-1.5 pl-8 pr-24 text-2xl font-normal text-black`}>
               things that im currently learning/excited for!
             </p>
           </div>
