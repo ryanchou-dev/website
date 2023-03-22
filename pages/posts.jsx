@@ -32,7 +32,7 @@ export default function posts({ post_data }) {
               />
             </a>
           </Link>
-          <div className={`inline font-semibold text-head sm:text-4xl`}>
+          <div className={`inline text-xl font-semibold text-head sm:text-4xl`}>
             <p className={`underline decoration-dotted underline-offset-2`}>
               Posts
             </p>

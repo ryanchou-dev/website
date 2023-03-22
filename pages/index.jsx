@@ -48,7 +48,7 @@ export default function home({ post_data }) {
             </a>
           </Tippy>
           <h1
-            className={`ml-2 inline font-semibold text-head underline decoration-slate-300 decoration-dashed underline-offset-2 sm:text-4xl`}
+            className={`ml-2 inline text-xl font-semibold text-head underline decoration-slate-300 decoration-dashed underline-offset-2 sm:text-4xl`}
           >
             Ryan Chou
           </h1>
