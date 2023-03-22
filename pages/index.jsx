@@ -77,7 +77,7 @@ export default function home({ post_data }) {
           </div>
         </div>
         <p
-          className={`text-light mt-2 block text-sm sm:text-xl md:text-2xl lg:inline xl:mt-4`}
+          className={`text-light text-md mt-2 block sm:text-xl md:text-2xl lg:inline xl:mt-4`}
         >
           &nbsp;|&nbsp;im&nbsp;
           <Typewriter
@@ -94,7 +94,7 @@ export default function home({ post_data }) {
             delaySpeed={6000}
           />
         </p>
-        <div className={`mt-8 block text-xl`}>
+        <div className={`mt-10 block text-xl`}>
           <Link href={`/posts`}>
             <a
               className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}

@@ -33,7 +33,7 @@ export default function projects() {
             </a>
           </Link>
           <div
-            className={`-mb-6 inline text-sm font-semibold text-head sm:text-xl md:text-2xl`}
+            className={`text-md -mb-6 inline font-semibold text-head sm:text-xl md:text-2xl`}
           >
             <p className={` underline decoration-dotted underline-offset-2`}>
               Projects
