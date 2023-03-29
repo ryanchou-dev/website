@@ -2,24 +2,28 @@
 title: "life & boba review"
 date: "2022-10-07"
 abstract: "by a person who has drank hundreds of boba drinks"
+tags: ["life", "boba"]
 ---
 
-## how im doing~
+![](https://images.unsplash.com/photo-1549693578-d683be217e58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1777&q=80)
 
-YO! Welcome back to my blog >W<
+_むしろあなたの隣にいたい, 光の中の見知らぬ人, 夜に踊る_ - FTC
 
-The past couple months have been nothing, but an thriller. With my new schedule at school, The people I've
-met are nothing short of extraordinary, and my new teachers are exceedingly dull. (Luckily, there's
-nothing that a fresh cup of boba can't fix. 🧋)
+## Life Review (2/10, would NOT recommend)
 
-Truthfully, the majority of my teachers are ⭐, and I'm excited to work with them. (except my science teacher 🤭)
+<!-- <div> -->
 
-As we turn into the holidays, and competition season 😩, I can't be helped to be filled with joy >:D
-This summer honestly disappointing, and I slept **WAY** too much, so now I'm in this ✨ultra grind✨ to try to prepare for USACO, math, and balance school work in process.
+Yo! Welcome back to my blog :>
 
-Ehh, that's all you'll hear from my life, but something more exciting is a
+The past couple months have been really exciting but like ughhh, I don't have time to do anything :(.
 
-# BOBA REVIEW!!
+As we turn into the holidays, and competition season 😩, I can't be helped to be filled with joy >:D. The Christmas lights, the holiday songs, it just makes you feel "super festive"
+
+This summer was honestly disappointing, and I slept **WAY** too much, so now I'm in this ✨ultra grind✨ to try to prepare for USACO, math, and balance school work in process.
+
+Err, that's all you'll hear from my life, but something more exciting is a
+
+## Boba Review :DDD
 
 unfortunately i only started taking pictures of the **unique** boba drinks ive been drinking since like early september, so those are the only ones you're gonna get.
 
@@ -87,7 +91,7 @@ My only complaint is that it's kinda pricy, but it's the only boba shop that's o
 
 I got the Tiger Boba Latte.
 
-## Grapeaholic 🌟
+## Grapeholic 🌟
 
 ---
 

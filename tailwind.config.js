@@ -11,6 +11,7 @@ module.exports = {
         lightbg: "#FFFFFF",
       },
     },
+
   },
   plugins: [require("@tailwindcss/typography")],
 };

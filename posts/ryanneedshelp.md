@@ -2,6 +2,7 @@
 title: "ryan rambles pt. 1"
 date: "2022-07-11"
 abstract: "yes i finally got to doing my blog"
+tags: ["life"]
 ---
 
 **WELCOME TO MY NEW SERIES: RYAN RAMBLES**

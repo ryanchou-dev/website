@@ -1,31 +1,39 @@
-import Nav from "../../components/Nav";
-import { getSlugs, getData } from "../../lib/posts";
-import Date from "../../components/Date";
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
+
+import Link from "next/link";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
+import { getPosts } from "../../lib/posts";
 import { AiFillGithub } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
-import Giscus from "@giscus/react";
-import Snowfall from "react-snowfall";
+import { Typewriter } from "react-simple-typewriter";
+import React from "react";
 
-export default function post({ data }) {
+export default function home({ tags, post_data }) {
+  if (typeof window === "undefined") {
+    React.useLayoutEffect = React.useEffect;
+  }
   return (
-    <>
+    <div className={``}>
       <Head>
-        <base target="_blank" rel="noreferrer" />
-        <meta name="title" content={"ryan's blog: " + data.title} />
-        <meta name="description" content={data.abstract} />
-        <title>{data.title}</title>
+        <meta name="title" content="ryan chou's website" />
+        <meta name="description" content="a collection of ryan's failures." />
+        <meta
+          name="keywords"
+          content="ryan chou usaco cs computer science competitive-programming"
+        />
+        <title>Ryan&apos;s Personal Website</title>
       </Head>
-      <div>
+
+      <div className={`mb-12`}>
         <Link href={"/"}>
           <a className={`float-left inline`}>
             <Image
               loading="eager"
               src="/images/ryan.png"
               alt="me."
-              className={`rounded-full`}
+              className={`rounded-full saturate-[100%]`}
               width="80%"
               height="80%"
               layout="fixed"
@@ -33,15 +41,10 @@ export default function post({ data }) {
             />
           </a>
         </Link>
-        <div
-          className={`text-md inline font-semibold text-head sm:text-xl md:text-2xl`}
-        >
-          <p
-            className={`inline underline decoration-dotted underline-offset-2`}
-          >
-            {data.title}
+        <div className={`inline text-xl font-semibold text-head sm:text-4xl`}>
+          <p className={`underline decoration-dotted underline-offset-2`}>
+            Tags
           </p>
-
           <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
             <a
               href={`https://github.com/ryanchou-dev`}
@@ -66,15 +69,12 @@ export default function post({ data }) {
             </a>
           </div>
           <p
-            className={`mt-1.5 pl-12 pr-24 text-sm font-normal text-black md:text-lg`}
+            className={`mt-1.5 pl-8 pr-24 text-sm font-normal text-black sm:text-xl md:text-2xl`}
           >
-            {data.abstract}
+            omg im organized
           </p>
         </div>
-      </div>
-      <div className={`mb-2 text-gray-600`}>
-        <Date dateString={data.date} />
-        <div className={`mt-8 block text-xl text-black`}>
+        <div className={`mt-10 block text-xl`}>
           <Link href={`/projects`}>
             <a
               className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
@@ -101,42 +101,32 @@ export default function post({ data }) {
           <hr className={`my-2 h-1 rounded-sm bg-head bg-opacity-40`} />
         </div>
       </div>
-      <div className="mb-4 space-x-2 text-lg xl:text-xl">
-        {data.tags.map((tag) => (
-          <Link href={"/tags/" + tag} key={tag}>
-            <a
-              className={`inline rounded-lg border-2 border-blue-300 bg-blue-300 bg-opacity-20 p-1 font-serif `}
-            >
-              #{tag}
-            </a>
+
+      <div className={`mt-8 block space-y-2 pb-12 text-lg sm:text-xl`}>
+        {tags.map((tag) => (
+          <Link
+            className="r mb-4 w-full space-x-2 p-2 text-lg xl:text-xl"
+            key={tag}
+            href={"/tags/" + tag}
+          >
+            <p className="rounded-lg border-2 border-blue-300 bg-blue-300 bg-opacity-20 p-1 font-serif hover:cursor-pointer ">
+              #{tag} (
+              {post_data.filter((post) => post.tags.includes(tag)).length})
+            </p>
           </Link>
         ))}
       </div>
-
-      <div className={`min-h-`}>
-        {console.log(data.contentHTML)}
-        <div
-          className={`prose max-w-none text-xl text-black  prose-img:rounded-lg prose-hr:my-2 prose-hr:h-1 prose-hr:rounded-sm prose-hr:bg-head prose-hr:opacity-40`}
-          dangerouslySetInnerHTML={{ __html: data.contentHTML }}
-        />
-      </div>
-    </>
+    </div>
   );
 }
 
-export async function getStaticPaths() {
-  const paths = getSlugs();
-  return {
-    paths,
-    fallback: false,
-  };
-}
+export async function getStaticProps() {
+  const [tags, post_data] = getPosts();
 
-export async function getStaticProps({ params }) {
-  const data = await getData(params.slug);
   return {
     props: {
-      data,
+      tags,
+      post_data,
     },
   };
 }

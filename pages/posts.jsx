@@ -7,7 +7,14 @@ import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
 import Snowfall from "react-snowfall";
+import { useState } from "react";
 export default function posts({ post_data }) {
+  const [filter, setFilter] = useState([]);
+  const updateTag = (tag) => {
+    if (filter.includes(tag)) setFilter(filter.filter((t) => t !== tag));
+    else setFilter([...filter, tag]);
+  };
+
   return (
     <>
       <Head>
@@ -15,74 +22,118 @@ export default function posts({ post_data }) {
         <meta name="description" content="ryan's disgusting writing" />
         <title>Ryan Chou</title>
       </Head>
-      <div
-        className={`max-w-screen min-h-screen bg-[#c5c7cc] bg-opacity-40 px-6 pt-12 pb-4 lg:px-52 lg:pt-16 lg:pb-8 xl:px-96 xl:pb-12 2xl:px-[500px]`}
-      >
-        <div>
-          <Link href={"/"}>
-            <a className={`float-left inline`}>
-              <Image
-                src="/images/ryan.png"
-                alt="me."
-                className={`rounded-full saturate-[100%]`}
-                width="80%"
-                height="80%"
-                layout="fixed"
-                objectFit="contain"
+      <div>
+        <Link href={"/"}>
+          <a className={`float-left inline`}>
+            <Image
+              loading="eager"
+              src="/images/ryan.png"
+              alt="me."
+              className={`rounded-full saturate-[100%]`}
+              width="80%"
+              height="80%"
+              layout="fixed"
+              objectFit="contain"
+            />
+          </a>
+        </Link>
+        <div className={`inline text-xl font-semibold text-head sm:text-4xl`}>
+          <p className={`underline decoration-dotted underline-offset-2`}>
+            Posts
+          </p>
+          <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
+            <a
+              href={`https://github.com/ryanchou-dev`}
+              target="_blank"
+              rel={"noreferrer"}
+              className={`duration-300 hover:scale-105`}
+            >
+              <AiFillGithub
+                className={`inline h-8 w-8 text-[#a9afba] opacity-80 duration-100 hover:text-[#8ca9de] sm:h-12 sm:w-12`}
               />
             </a>
-          </Link>
-          <div className={`inline text-xl font-semibold text-head sm:text-4xl`}>
-            <p className={`underline decoration-dotted underline-offset-2`}>
-              Posts
-            </p>
-            <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
-              <a
-                href={`https://github.com/ryanchou-dev`}
-                target="_blank"
-                rel={"noreferrer"}
-                className={`duration-300 hover:scale-105`}
-              >
-                <AiFillGithub
-                  className={`inline h-8 w-8 text-[#a9afba] opacity-80 duration-100 hover:text-[#8ca9de] sm:h-12 sm:w-12`}
-                />
-              </a>
 
-              <a
-                target="_blank"
-                rel={"noreferrer"}
-                href={`https://medium.com/@ryan-chou`}
-                className={`duration-300 hover:scale-105`}
-              >
-                <BsMedium
-                  className={`inline h-8 w-8 text-[#a9afba] opacity-80 duration-100 hover:text-[#8ca9de] sm:h-12 sm:w-12`}
-                />
-              </a>
-            </div>
-            <p
-              className={`mt-1.5 pl-8 pr-24 text-sm font-normal text-black sm:text-xl md:text-2xl`}
+            <a
+              target="_blank"
+              rel={"noreferrer"}
+              href={`https://medium.com/@ryan-chou`}
+              className={`duration-300 hover:scale-105`}
             >
-              things that im currently learning/excited for!
-            </p>
+              <BsMedium
+                className={`inline h-8 w-8 text-[#a9afba] opacity-80 duration-100 hover:text-[#8ca9de] sm:h-12 sm:w-12`}
+              />
+            </a>
           </div>
+          <p
+            className={`mt-1.5 pl-8 pr-24 text-sm font-normal text-black sm:text-xl md:text-2xl`}
+          >
+            things that im currently learning/excited for!
+          </p>
         </div>
+        <div className={`mt-10 block text-xl`}>
+          <Link href={`/projects`}>
+            <a
+              className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+            >
+              projects
+            </a>
+          </Link>
+          &nbsp;&#8226;&#8226;&#8226;&nbsp;
+          <Link href={`/posts`}>
+            <a
+              className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+            >
+              posts
+            </a>
+          </Link>
+          &nbsp;&#8226;&#8226;&#8226;&nbsp;
+          <Link href={`/tags`}>
+            <a
+              className={`bg-opacity inline rounded-lg p-0.5 underline duration-150 hover:cursor-pointer hover:bg-[#88C0D0] hover:bg-opacity-20 hover:text-[#687fa8] hover:no-underline md:p-1`}
+            >
+              tags
+            </a>
+          </Link>
+          <hr className={`my-2 h-1 rounded-sm bg-head bg-opacity-40`} />
+        </div>
+      </div>
 
-        <div className={`mt-12`}>
-          {post_data.map(({ slug, abstract, date, title }) => (
-            <Link href={"/posts/" + slug} key={slug}>
-              <div className={`cursor-pointer`}>
-                <hr className={`my-2 h-1 rounded-sm bg-head bg-opacity-40`} />
-                <div className={`ml-4`}>
-                  <p className={`text-2xl`}>{title}</p>
-                  <p className={`text-gray-600`}>
-                    <Date dateString={date} />
-                  </p>
-                  <p className={`mt-2`}>{abstract}</p>
+      <div
+        className={`mt-4 space-x-4 text-lg sm:space-x-2 sm:text-xl`}
+        key={filter}
+      >
+        <div className={`mt-4`}>
+          {post_data.map(({ slug, abstract, date, title, tags }) =>
+            filter.length && !filter.some((item) => tags.includes(item)) ? (
+              <></>
+            ) : (
+              <Link href={"/posts/" + slug} key={slug}>
+                <div className={`cursor-pointer`}>
+                  <div className={`ml-4`}>
+                    <p className={`text-3xl font-semibold text-[#000000]`}>
+                      {title}
+                    </p>
+                    <p className={`py-1 text-gray-600`}>
+                      <Date dateString={date} /> |{" "}
+                      <div className="ml-2 inline space-x-2">
+                        {tags.map((tag) => (
+                          <Link href={"/tags/" + tag} key={tag}>
+                            <a
+                              className={`inline rounded-lg border-2 border-blue-300 bg-blue-300 bg-opacity-20 p-1 `}
+                            >
+                              #{tag}
+                            </a>
+                          </Link>
+                        ))}
+                      </div>
+                    </p>
+                    <p className={`mt-2`}>{abstract}</p>
+                  </div>
+                  <hr className={`my-2 h-1 rounded-sm bg-head bg-opacity-40`} />
                 </div>
-                {/* <hr className={`my-2 bg-head h-1 bg-opacity-40 rounded-sm`} /> */}
-              </div>
-            </Link>
-          ))}
+              </Link>
+            )
+          )}
         </div>
       </div>
     </>
@@ -90,7 +141,7 @@ export default function posts({ post_data }) {
 }
 
 export async function getStaticProps() {
-  const post_data = getPosts();
+  const [_, post_data] = getPosts();
 
   return {
     props: {
