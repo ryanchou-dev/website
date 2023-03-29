@@ -62,7 +62,7 @@ export default function tagged({ tag, post_data }) {
           <p
             className={`mt-1.5 pl-8 pr-24 text-sm font-normal text-black sm:text-xl md:text-2xl`}
           >
-            All blog posts tagged with "{tag}"
+            All blog posts tagged with &quot;{tag}&quot;
           </p>
         </div>
         <div className={`mt-10 block text-xl`}>

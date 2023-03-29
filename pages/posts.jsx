@@ -9,12 +9,6 @@ import { BsMedium } from "react-icons/bs";
 import Snowfall from "react-snowfall";
 import { useState } from "react";
 export default function posts({ post_data }) {
-  const [filter, setFilter] = useState([]);
-  const updateTag = (tag) => {
-    if (filter.includes(tag)) setFilter(filter.filter((t) => t !== tag));
-    else setFilter([...filter, tag]);
-  };
-
   return (
     <>
       <Head>
@@ -98,42 +92,35 @@ export default function posts({ post_data }) {
         </div>
       </div>
 
-      <div
-        className={`mt-4 space-x-4 text-lg sm:space-x-2 sm:text-xl`}
-        key={filter}
-      >
+      <div className={`mt-4 space-x-4 text-lg sm:space-x-2 sm:text-xl`}>
         <div className={`mt-4`}>
-          {post_data.map(({ slug, abstract, date, title, tags }) =>
-            filter.length && !filter.some((item) => tags.includes(item)) ? (
-              <></>
-            ) : (
-              <Link href={"/posts/" + slug} key={slug}>
-                <div className={`cursor-pointer`}>
-                  <div className={`ml-4`}>
-                    <p className={`text-3xl font-semibold text-[#000000]`}>
-                      {title}
-                    </p>
-                    <p className={`py-1 text-gray-600`}>
-                      <Date dateString={date} /> |{" "}
-                      <div className="ml-2 inline space-x-2">
-                        {tags.map((tag) => (
-                          <Link href={"/tags/" + tag} key={tag}>
-                            <a
-                              className={`inline rounded-lg border-2 border-blue-300 bg-blue-300 bg-opacity-20 p-1 `}
-                            >
-                              #{tag}
-                            </a>
-                          </Link>
-                        ))}
-                      </div>
-                    </p>
-                    <p className={`mt-2`}>{abstract}</p>
-                  </div>
-                  <hr className={`my-2 h-1 rounded-sm bg-head bg-opacity-40`} />
+          {post_data.map(({ slug, abstract, date, title, tags }) => (
+            <Link href={"/posts/" + slug} key={slug}>
+              <div className={`cursor-pointer`}>
+                <div className={`ml-4`}>
+                  <p className={`text-3xl font-semibold text-[#000000]`}>
+                    {title}
+                  </p>
+                  <p className={`py-1 text-gray-600`}>
+                    <Date dateString={date} /> |{" "}
+                    <div className="ml-2 inline space-x-2">
+                      {tags.map((tag) => (
+                        <Link href={"/tags/" + tag} key={tag} passHref>
+                          <a
+                            className={`inline rounded-lg border-2 border-blue-300 bg-blue-300 bg-opacity-20 p-1 `}
+                          >
+                            #{tag}
+                          </a>
+                        </Link>
+                      ))}
+                    </div>
+                  </p>
+                  <p className={`mt-2`}>{abstract}</p>
                 </div>
-              </Link>
-            )
-          )}
+                <hr className={`my-2 h-1 rounded-sm bg-head bg-opacity-40`} />
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </>
