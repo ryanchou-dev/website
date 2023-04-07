@@ -18,6 +18,6 @@ Greetings! I'll try to write more in the coming days :D. Here is a messy vent es
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another problem arises with blame and learning. There isn't a good feedback loop to learn what ethics are and the best decision to make in any case. The most minuscule factors could completely flip the desired output, and this makes us vulnerable to life-threatening mistakes. Who is to blame if something goes south? Is it the developers? What can they even do?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm not entirely sure what the path to fixing this is. Maybe the only right solution at the moment is to return to simplicity. That is **you** in **your** car, using **your** judgment to make the best decision for **you**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm not entirely sure what the path to fixing this is. Maybe the only right solution at the moment is to return to simplicity.
 
 ~ cryan
