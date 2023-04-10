@@ -114,9 +114,10 @@ export default function post({ data }) {
       </div>
 
       <div className={`min-h-`}>
-        {console.log(data.contentHTML)}
         <div
-          className={`prose max-w-none text-xl text-black  prose-img:rounded-lg prose-hr:my-2 prose-hr:h-1 prose-hr:rounded-sm prose-hr:bg-head prose-hr:opacity-40`}
+          className={`prose max-w-none text-xl text-black  prose-a:cursor-pointer prose-a:rounded-lg prose-a:bg-[#88C0D0] prose-a:bg-opacity-20 prose-a:p-0.5 prose-a:text-[#455674]
+		  prose-table:rounded-lg prose-table:border-2 prose-table:border-gray-500 prose-table:shadow-lg prose-th:p-2 prose-th:text-xl prose-td:p-2 prose-img:rounded-lg prose-hr:my-2 prose-hr:h-1 prose-hr:rounded-sm prose-hr:bg-head prose-hr:opacity-40 prose-a:md:p-1
+		  `}
           dangerouslySetInnerHTML={{ __html: data.contentHTML }}
         />
       </div>

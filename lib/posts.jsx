@@ -1,8 +1,11 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import remarkHtml from "remark-html";
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import remarkGfm from "remark-gfm";
+import rehypeStringify from "rehype-stringify";
 const dir = path.join(process.cwd(), "posts");
 
 export function getPosts() {
@@ -61,7 +64,6 @@ export function getTags() {
     const data = fs.readFileSync(pth, "utf-8");
 
     const md = matter(data);
-    console.log(md.data.tags);
     tags = tags.concat(md.data.tags);
   });
   tags = [...new Set(tags)];
@@ -79,7 +81,12 @@ export async function getData(slug) {
   const data = fs.readFileSync(pth, "utf-8");
 
   const matterRes = matter(data);
-  const content = await remark().use(remarkHtml).process(matterRes.content);
+  const content = await unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype)
+    .use(rehypeStringify)
+    .process(matterRes.content);
 
   const contentHTML = content.toString();
   return {
