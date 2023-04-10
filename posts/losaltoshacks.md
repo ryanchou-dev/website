@@ -1,7 +1,7 @@
 ---
 title: "Los Altos Hacks VII"
 date: "2023-04-11"
-abstract: "recounting one of the best weekends of my life :3"
+abstract: "my (sleep-deprived) experience at LAH :3"
 tags: ["life", "hackathons"]
 ---
 
