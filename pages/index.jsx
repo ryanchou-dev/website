@@ -23,7 +23,7 @@ export default function home({ post_data }) {
           name="keywords"
           content="ryan chou usaco cs computer science competitive-programming"
         />
-        <title>Ryan&apos;s Personal Website</title>
+        <title>ryan&apos;s personal website</title>
       </Head>
 
       <div>
@@ -35,19 +35,20 @@ export default function home({ post_data }) {
             href={`https://cloud-idpd4xpze-hack-club-bot.vercel.app/0image.png`}
           >
             <Image
-              loading="eager"
-              src="/images/ryan.png"
+              priority
+              src="/images/ryan.jpg"
               alt="ryan chou."
-              className={`rounded-full saturate-[100%]`}
-              width="80%"
-              height="80%"
+              className={`rounded-full`}
+              width="85%"
+              height="85%"
               layout="fixed"
-              objectFit="contain"
+              objectFit="cover"
+              quality={100}
             />
           </a>
         </Tippy>
         <h1
-          className={`ml-2 inline text-xl font-semibold text-head underline decoration-slate-300 decoration-dashed underline-offset-2 sm:text-4xl`}
+          className={`ml-4 inline text-xl font-semibold text-head underline decoration-slate-300 decoration-dashed underline-offset-2 sm:text-4xl`}
         >
           Ryan Chou
         </h1>
@@ -76,7 +77,7 @@ export default function home({ post_data }) {
         </div>
       </div>
       <p
-        className={`text-light text-md mt-2 block sm:text-xl md:text-2xl lg:inline xl:mt-4`}
+        className={`text-light text-md ml-2 mt-2 block sm:text-xl md:text-2xl lg:inline xl:mt-4`}
       >
         &nbsp;|&nbsp;im&nbsp;
         <Typewriter

@@ -22,26 +22,26 @@ export default function post({ data }) {
         <Link href={"/"}>
           <a className={`float-left inline`}>
             <Image
-              loading="eager"
-              src="/images/ryan.png"
-              alt="me."
+              priority
+              src="/images/ryan.jpg"
+              alt="ryan chou."
               className={`rounded-full`}
-              width="80%"
-              height="80%"
+              width="85%"
+              height="85%"
               layout="fixed"
-              objectFit="contain"
+              objectFit="cover"
+              quality={100}
             />
           </a>
         </Link>
+        <p
+          className={`ml-4 inline text-xl font-semibold text-head  underline decoration-dotted underline-offset-2 sm:text-4xl`}
+        >
+          {data.title}
+        </p>
         <div
           className={`text-md inline font-semibold text-head sm:text-xl md:text-2xl`}
         >
-          <p
-            className={`inline underline decoration-dotted underline-offset-2`}
-          >
-            {data.title}
-          </p>
-
           <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
             <a
               href={`https://github.com/ryanchou-dev`}
@@ -65,15 +65,18 @@ export default function post({ data }) {
               />
             </a>
           </div>
-          <p
-            className={`mt-1.5 pl-12 pr-24 text-sm font-normal text-black md:text-lg`}
-          >
-            {data.abstract}
-          </p>
         </div>
+        <p
+          className={`mt-1.5 pl-[6.3rem] pr-24 text-sm font-normal text-black md:text-lg`}
+        >
+          {data.abstract}
+        </p>
       </div>
+
       <div className={`mb-2 text-gray-600`}>
-        <Date dateString={data.date} />
+        <div>
+          <Date dateString={data.date} />
+        </div>
         <div className={`mt-8 block text-xl text-black`}>
           <Link href={`/projects`}>
             <a

@@ -14,27 +14,30 @@ export default function posts({ post_data }) {
       <Head>
         <meta name="title" content="ryan's blog" />
         <meta name="description" content="ryan's disgusting writing" />
-        <title>Ryan Chou</title>
+        <title>ryan&apos;s messy blog posts</title>
       </Head>
       <div>
         <Link href={"/"}>
           <a className={`float-left inline`}>
             <Image
-              loading="eager"
-              src="/images/ryan.png"
-              alt="me."
-              className={`rounded-full saturate-[100%]`}
-              width="80%"
-              height="80%"
+              priority
+              src="/images/ryan.jpg"
+              alt="ryan chou."
+              className={`rounded-full`}
+              width="85%"
+              height="85%"
               layout="fixed"
-              objectFit="contain"
+              objectFit="cover"
+              quality={100}
             />
           </a>
         </Link>
+        <p
+          className={`ml-4 inline text-xl font-semibold text-head underline decoration-dotted underline-offset-2 sm:text-4xl`}
+        >
+          Posts
+        </p>
         <div className={`inline text-xl font-semibold text-head sm:text-4xl`}>
-          <p className={`underline decoration-dotted underline-offset-2`}>
-            Posts
-          </p>
           <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
             <a
               href={`https://github.com/ryanchou-dev`}
@@ -58,12 +61,12 @@ export default function posts({ post_data }) {
               />
             </a>
           </div>
-          <p
-            className={`mt-1.5 pl-8 pr-24 text-sm font-normal text-black sm:text-xl md:text-2xl`}
-          >
-            things that im currently learning/excited for!
-          </p>
         </div>
+        <p
+          className={`mt-1.5 pl-24 pr-24 text-sm font-normal text-black sm:text-xl md:text-2xl`}
+        >
+          things that im currently learning/excited for!
+        </p>
         <div className={`mt-10 block text-xl`}>
           <Link href={`/projects`}>
             <a

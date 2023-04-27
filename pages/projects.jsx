@@ -13,27 +13,30 @@ export default function projects() {
       <Head>
         <meta name="title" content="ryan's things" />
         <meta name="description" content="a list of ryan's failures" />
-        <title>Ryan Chou</title>
+        <title>ryan&apos;s projects</title>
       </Head>
-      <div className={`mb-12`}>
-        <Link href={"/"}>
+      <div className={`mb-12 `}>
+        <Link href={"/"} className="">
           <a className={`float-left inline`}>
             <Image
-              loading="eager"
-              src="/images/ryan.png"
-              alt="me."
-              className={`rounded-full saturate-[100%]`}
-              width="80%"
-              height="80%"
+              priority
+              src="/images/ryan.jpg"
+              alt="ryan chou."
+              className={`rounded-full `}
+              width="85%"
+              height="85%"
               layout="fixed"
-              objectFit="contain"
+              objectFit="cover"
+              quality={100}
             />
           </a>
         </Link>
-        <div className={`inline text-xl font-semibold text-head sm:text-4xl`}>
-          <p className={`underline decoration-dotted underline-offset-2`}>
-            Projects
-          </p>
+        <p
+          className={`ml-4 inline text-xl font-semibold text-head underline decoration-dotted underline-offset-2 sm:text-4xl`}
+        >
+          Projects
+        </p>
+        <div className={`inline  text-xl font-semibold text-head sm:text-4xl`}>
           <div className={`float-right space-x-4 text-2xl md:space-x-6`}>
             <a
               href={`https://github.com/ryanchou-dev`}
@@ -58,7 +61,7 @@ export default function projects() {
             </a>
           </div>
           <p
-            className={`mt-1.5 pl-8 pr-24 text-sm font-normal text-black sm:text-xl md:text-2xl`}
+            className={`mt-1.5  pl-24 pr-24 text-sm font-normal text-black sm:text-xl md:text-2xl`}
           >
             projects im most proud of :D
           </p>

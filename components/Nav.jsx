@@ -8,12 +8,15 @@ const Nav = () => {
         <Link href={`/`}>
           <a>
             <Image
-              loading="eager"
-              src="/images/ryan.png"
-              alt="me."
-              className={`rounded-full duration-300 hover:scale-105`}
-              width={95}
-              height={95}
+              priority
+              src="/images/ryan.jpg"
+              alt="ryan chou."
+              className={`rounded-full`}
+              width="85%"
+              height="85%"
+              layout="fixed"
+              objectFit="cover"
+              quality={100}
             />
           </a>
         </Link>
