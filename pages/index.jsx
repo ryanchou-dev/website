@@ -90,7 +90,7 @@ export default function home({ post_data }) {
           loop={0}
           cursor
           cursorStyle="|"
-          typeSpeed={300}
+          //   typeSpeed={300}
           delaySpeed={6000}
         />
       </p>
